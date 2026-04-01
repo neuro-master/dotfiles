@@ -25,6 +25,7 @@ alias ls='ls -v --color=auto'
 alias ll='ls -vlah --color=auto'
 alias la='ls -vA --color=auto'
 alias view='feh -FZRq -d -B black'
+alias battery='cat /sys/class/power_supply/BAT*/{capacity,status}'
 
 # Prompt
 autoload -Uz promptinit
