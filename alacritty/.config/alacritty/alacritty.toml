@@ -1,0 +1,10 @@
+# Load colorscheme
+[general]
+import = [
+"colorschemes/citylights.toml",
+"fontstyles/jetbrainsmono.toml"
+]
+
+# Window Settings
+[window]
+opacity = 0.90
