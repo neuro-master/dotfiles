@@ -1,3 +1,5 @@
+# A slightly modified version of CityLights Theme
+
 # Default colors
 [colors.primary]
 background = '#171d23'
@@ -16,7 +18,7 @@ green   = '#8bd49c'
 yellow  = '#d98e45'
 blue    = '#539afc'
 magenta = '#b62d65'
-cyan    = '#008b94'
+cyan    = '#52b8bf'
 white   = '#b7c5d3'
 
 # Bright colors
