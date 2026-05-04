@@ -1,0 +1,19 @@
+;; A configuration used to swap caps lock with left ctrl, and also swap right alt with right ctrl
+
+;; Device file mentioned is the bluetooth keyboard
+
+(defcfg
+    input (device-file "/dev/input/by-id/usb-1ea7_2.4G_Mouse-event-kbd")
+    output (uinput-sink "KMonad Keyboard")
+    fallthrough true
+    allow-cmd false
+)
+
+(defsrc
+    caps lctl ralt rctl
+)
+
+(deflayer base
+    lctl caps rctl ralt
+)
+
