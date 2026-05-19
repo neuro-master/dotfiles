@@ -1,4 +1,4 @@
-# Load colorscheme
+# Load colorscheme and fontstyle
 [general]
 import = [
 "colorschemes/citylights.toml",
