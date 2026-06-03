@@ -14,8 +14,8 @@ set $mod Mod1
 # Run picom compositor
 exec --no-startup-id picom -b
 
-# Set background image
-exec_always --no-startup-id feh --no-fehbg --bg-scale ~/.local/wallpapers/blue_city.jpg
+# Set background image (current_wallpaper should be a symbolic link to the image you want)
+exec_always --no-startup-id feh --no-fehbg --bg-scale ~/.local/wallpapers/current_wallpaper
 
 # Set wacom settings (Restart i3 (not just config) via shortcut to enable settings if tablet plugged after initial i3 startup)
 exec_always --no-startup-id ~/.config/i3/wacom-setup.sh
