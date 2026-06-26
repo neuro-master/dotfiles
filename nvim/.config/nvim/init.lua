@@ -1,14 +1,14 @@
--- Print line numbers
-vim.o.number = true
+vim.opt.autoindent = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.shiftround = true
 
--- Use relative numbering for line numbers
-vim.o.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
--- Use spaces instead of tabs (except Makefiles) by 'shiftwidth' tabs
-vim.o.shiftwidth = 4
-vim.o.smartindent = true
+vim.opt.backspace = { "indent", "eol", "start" }
 
--- Use smart autoindenting for C programs
-vim.o.smartindent = true
-
+vim.opt.guicursor = ""
 
