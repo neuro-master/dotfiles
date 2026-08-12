@@ -1,0 +1,15 @@
+# Modules common to all systems will be added by default (not ignored)
+
+
+# Modules to ignore for all systems (perhaps no system uses them anymore)
+.config/vim
+.local/share/vim
+
+
+# Modules to install on "cosmo" only
+{{- if ne .chezmoi.hostname "cosmo" }}
+.config/xinit
+.config/i3
+.config/alacritty
+{{- end }}
+

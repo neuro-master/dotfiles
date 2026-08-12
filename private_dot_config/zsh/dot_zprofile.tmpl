@@ -1,0 +1,20 @@
+# Commands to execute when a login shell session starts
+
+
+{{- if eq .chezmoi.hostname "cosmo" }}
+# Start Xorg display server (from xinit) on "cosmo"
+
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ] ; then
+    exec startx
+fi
+{{- end }}
+
+
+{{- if eq .chezmoi.hostname "astra" }}
+# Start "sway" compositor on "astra"
+
+if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
+    exec sway
+fi
+{{- end }}
+

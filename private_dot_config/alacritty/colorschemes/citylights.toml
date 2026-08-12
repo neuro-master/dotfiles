@@ -1,0 +1,33 @@
+# A slightly modified version of CityLights Theme
+
+# Default colors
+[colors.primary]
+background = '#171d23'
+foreground = '#ffffff'
+
+# Cursor colors
+[colors.cursor]
+text   = '#fafafa'
+cursor = '#008b94'
+
+# Normal colors
+[colors.normal]
+black   = '#171d23'
+red     = '#ee3a43'
+green   = '#8bd49c'
+yellow  = '#d98e45'
+blue    = '#539afc'
+magenta = '#b62d65'
+cyan    = '#52b8bf'
+white   = '#b7c5d3'
+
+# Bright colors
+[colors.bright]
+black   = '#41505e'
+red     = '#d95468'
+green   = '#a0e3af'
+yellow  = '#ebbf83'
+blue    = '#5ec4ff'
+magenta = '#e27e8d'
+cyan    = '#70e1e8'
+white   = '#ffffff'

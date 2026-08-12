@@ -1,0 +1,9 @@
+[user]
+	name = Neuro
+	email = neuro2718@gmail.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
