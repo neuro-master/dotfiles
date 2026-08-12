@@ -21,10 +21,9 @@ unsetopt autocd extendedglob notify
 bindkey -v
 
 # Custom aliases
-alias ls='ls -v --color=always'
-alias ll='ls -vlah --color=always'
-alias la='ls -vA --color=always'
-alias less='less -R'
+alias ls='ls -v --color=auto'
+alias ll='ls -vlah --color=auto'
+alias la='ls -vA --color=auto'
 alias view='feh -FZRq -d -B black'
 alias battery='cat /sys/class/power_supply/BAT*/{capacity,status}'
 
