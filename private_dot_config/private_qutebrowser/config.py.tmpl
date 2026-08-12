@@ -1,0 +1,19 @@
+# Do not autoload config
+config.load_autoconfig(False)
+
+# Enable Dark Mode
+c.colors.webpage.darkmode.enabled = True
+
+
+# Set the default zoom and font size to a comfortable value (depending on machine)
+
+{{- if eq .chezmoi.hostname "cosmo" }}
+c.zoom.default = 100
+c.fonts.default_size = '12pt'
+{{- end }}
+
+{{- if eq .chezmoi.hostname "astra" }}
+c.zoom.default = 75
+c.fonts.default_size = '8pt'
+{{- end }}
+
