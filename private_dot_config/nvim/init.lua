@@ -1,6 +1,7 @@
 -- VIM OPTIONS
 
-vim.o.completeopt = "menuone,noinsert,noselect"
+-- For autocompletion suggestions, open a menu (even if only one option available), show additional info (if any) and do not pre-insert text until selection chosen
+vim.o.completeopt = "menuone,popup,noinsert"
 
 -- Tab setup
 vim.opt.autoindent = true
