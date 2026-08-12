@@ -13,3 +13,10 @@
 .config/alacritty
 {{- end }}
 
+
+# Modules to install on "astra" only
+{{- if ne .chezmoi.hostname "astra" }}
+.config/sway
+.config/foot
+{{- end }}
+
