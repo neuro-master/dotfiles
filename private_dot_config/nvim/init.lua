@@ -37,6 +37,7 @@ vim.lsp.enable('clangd')    -- C/C++ (clang)
 vim.lsp.enable('html')      -- HTML (vscode-html-languageserver)
 vim.lsp.enable('css')       -- CSS (vscode-css-languageserver)
 vim.lsp.enable('ts')        -- JavaScript/Typescript (typescript-languageserver)
+vim.lsp.enable('pylsp')     -- Python (python-lsp-server)
 
 -- Create Autocommand whenever LSP is initiated
 vim.api.nvim_create_autocmd('LspAttach', {
