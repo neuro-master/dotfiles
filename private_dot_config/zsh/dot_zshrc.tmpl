@@ -24,8 +24,17 @@ bindkey -v
 alias ls='ls -v --color=auto'
 alias ll='ls -vlah --color=auto'
 alias la='ls -vA --color=auto'
-alias view='feh -FZRq -d -B black'
 alias battery='cat /sys/class/power_supply/BAT*/{capacity,status}'
+
+{{- if eq .chezmoi.hostname "cosmo" }}
+# 'cosmo' only aliases
+alias view='feh -FZRq -d -B black'
+{{- end }}
+
+{{- if eq .chezmoi.hostname "astra" }}
+# 'astra' only aliases
+alias view='swayimg'
+{{- end }}
 
 # Set necessary Environment Variables (for interactive session)
 export EDITOR=nvim
